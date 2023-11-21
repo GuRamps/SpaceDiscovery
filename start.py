@@ -13,3 +13,5 @@ while rodando:
         if evento.type == pygame.QUIT:
             rodando = False
     tela.blit(fundo, (0,0))
+    pygame.display.update()
+    clock.tick(60)
