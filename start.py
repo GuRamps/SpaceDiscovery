@@ -1,5 +1,6 @@
 from extençoes import*
 
+# main
 pygame.init()
 tamanho = (683,384)
 branco = (255,255,255)
@@ -8,7 +9,13 @@ clock = pygame.time.Clock()
 tela = pygame.display.set_mode(tamanho)
 fundo = pygame.image.load('fundo.jpg')
 pygame.display.set_caption('Space Discovery')
+estrelas = {}
 
+#text style 
+#text
+#music
+
+#runing
 rodando = True
 while rodando:
     for event in pygame.event.get():
