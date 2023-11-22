@@ -14,6 +14,11 @@ estrelas = {}
 #text style 
 #text
 #music
+try:
+    pygame.mixer.music.load("Space_Machine_Power.mp3")
+    pygame.mixer_music.play(-1)
+except pygame.error:
+    print("Erro ao carregar o icone")
 
 #runing
 rodando = True
