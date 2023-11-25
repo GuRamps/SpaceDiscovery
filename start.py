@@ -91,6 +91,11 @@ while running:
         texto_renderizado = fonte_letra.render(texto_distancias, True, (255, 255, 255))
         tela.blit(texto_renderizado, posicao_texto_distancias)
 
+# Desenhar marcadores
+    for pos, item in estrelas:
+        pygame.draw.circle(tela, (95, 96, 97), pos, 5)
+
+
     pygame.display.update()
     clock.tick(60)
 
