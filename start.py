@@ -59,6 +59,8 @@ while running:
             elif event.key == pygame.K_F12:
                 estrelas = []
                 print("Pontos deletados.")
+            elif event.key == pygame.K_ESCAPE:
+                running = False
         elif event.type == pygame.MOUSEBUTTONUP and event.button == 1:
             pos = pygame.mouse.get_pos()
             item = simpledialog.askstring("Space", "Nome da Estrela:")
